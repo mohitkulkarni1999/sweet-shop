@@ -1,0 +1,337 @@
+/* ===== Menu Page Specific Styles ===== */
+
+/* Menu Hero Section */
+.menu-hero {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/menu-hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  margin-top: 80px;
+}
+
+.menu-hero-overlay {
+  width: 100%;
+}
+
+.menu-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.menu-hero h1 span {
+  color: var(--secondary);
+}
+
+.menu-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Menu Navigation */
+.menu-nav {
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 80px;
+  z-index: 900;
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.menu-nav li {
+  margin: 0 15px;
+}
+
+.menu-nav a {
+  font-weight: 500;
+  color: var(--text-light);
+  padding: 5px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.menu-nav a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transition: var(--transition);
+}
+
+.menu-nav a:hover:after,
+.menu-nav a.active:after {
+  width: 100%;
+}
+
+.menu-nav a:hover,
+.menu-nav a.active {
+  color: var(--primary);
+}
+
+/* Menu Sections */
+.menu-section {
+  padding: 80px 0;
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.item-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.menu-item:hover .item-image img {
+  transform: scale(1.1);
+}
+
+.item-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.item-badge.premium {
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.item-badge.signature {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.item-content {
+  padding: 20px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-header h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.menu-item p {
+  color: var(--text-light);
+  margin-bottom: 15px;
+  font-size: 14px;
+  min-height: 60px;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rating {
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.rating i {
+  margin-right: 2px;
+}
+
+/* Combo Grid */
+.combo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.combo-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.combo-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.combo-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.combo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.combo-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--success);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.combo-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.combo-content h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.combo-content p {
+  color: var(--text-light);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.combo-price {
+  margin-bottom: 15px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--text-light);
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+/* Menu CTA */
+.menu-cta {
+  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/cta-bg2.jpg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+}
+
+.menu-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.menu-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .menu-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-hero {
+    height: 300px;
+    margin-top: 70px;
+  }
+  
+  .menu-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-nav ul {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .menu-hero p {
+    font-size: 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .menu-grid,
+  .combo-grid {
+    grid-template-columns: 1fr;
+  }
+}
