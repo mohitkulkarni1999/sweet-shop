@@ -200,7 +200,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .logo {
@@ -213,8 +212,8 @@ ul {
 }
 
 .logo-img {
-  height: 40px;
-  margin-right: 10px;
+  width: 200px;
+  height: auto;
 }
 
 .main-nav {
