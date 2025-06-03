@@ -129,6 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+
+
   // Set initial state for animated elements
   document.querySelectorAll('.about-container, .specialty-card, .feature-card, .gallery-item').forEach(element => {
     element.style.opacity = '0';
@@ -153,3 +155,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// // Counter animation for unique section
+
+// const uniqueCounters = document.querySelectorAll("#uniqueCounterSection .unique-num");
+
+// uniqueCounters.forEach(counter => {
+//   counter.innerText = "000";
+
+//   const updateCounter = () => {
+//     const target = +counter.getAttribute("data-val");
+//     let current = +counter.innerText;
+
+//     const increment = target / 100; // speed
+
+//     if (current < target) {
+//       counter.innerText = Math.ceil(current + increment).toString().padStart(3, "0");
+//       setTimeout(updateCounter, 20);
+//     } else {
+//       counter.innerText = target.toString();
+//     }
+//   };
+
+//   updateCounter();
+// });

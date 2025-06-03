@@ -1060,3 +1060,146 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset and base
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* Section container */
+#uniqueCounterSection {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  background-color:var(--light);
+}
+
+/* Wrapper for counters */
+#uniqueCounterSection .unique-wrapper {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Each counter card */
+#uniqueCounterSection .unique-container {
+  flex: 0 0 auto; /* prevents shrinking */
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  font-size: 18px;
+  border-radius: 0.5em;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+#uniqueCounterSection .unique-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon */
+#uniqueCounterSection i {
+  color: red;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/* Number */
+#uniqueCounterSection .unique-num {
+  color: red;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+/* Label */
+#uniqueCounterSection .unique-text {
+  color: red;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0.7em 0;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  #uniqueCounterSection .unique-wrapper {
+    width: 85vw;
+  }
+  #uniqueCounterSection .unique-container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #uniqueCounterSection .unique-wrapper {
+    width: 90vw;
+    gap: 20px;
+  }
+  #uniqueCounterSection .unique-container {
+    width: calc(50% - 20px);
+    height: 30vmin;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #uniqueCounterSection .unique-wrapper {
+    gap: 15px;
+  }
+  #uniqueCounterSection .unique-container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 10px;
+  }
+} */
+
+
+
+
+
+
+
+
