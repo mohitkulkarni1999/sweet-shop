@@ -211,11 +211,9 @@ ul {
   color: var(--primary);
 }
 
-.logo-img {
-  width: 200px;
-  height: auto;
-}
-
+ .logo-img {
+    width: 100px; /* Reduce logo size on small screens */
+  }
 .main-nav {
   display: flex;
   align-items: center;
